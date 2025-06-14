@@ -1,19 +1,32 @@
-@use '../utilidades/variables';
+@use '../utilidades/variables' as v;
 
 header {
-  background-color: variables.$gris-fondo;
-  color: variables.$color-primario-azul;
+  background-color: v.$gris-fondo;
+  color: v.$color-primario-azul;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 20px;
+
+
+  img {
+    width: 200px;
+    margin-bottom: 20px;
+
+  }
 
   nav a {
-    margin-left: 1rem;
+    margin: 15px;
     font-weight: bold;
     transition: 0.3s;
 
+    @media (max-width : v.$celularGrande) {
+      display: block;
+    }
+
     &:hover {
-      color: variables.$color-rojo;
+      color: v.$color-rojo;
     }
   }
 }

@@ -28,13 +28,24 @@ header {
   background-color: #e0e0e0;
   color: #0eb0ab;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 20px;
+}
+header img {
+  width: 200px;
+  margin-bottom: 20px;
 }
 header nav a {
-  margin-left: 1rem;
+  margin: 15px;
   font-weight: bold;
   transition: 0.3s;
+}
+@media (max-width: 576px) {
+  header nav a {
+    display: block;
+  }
 }
 header nav a:hover {
   color: #e20914;
