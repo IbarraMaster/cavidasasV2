@@ -32,6 +32,7 @@ header {
   justify-content: center;
   align-items: center;
   padding: 20px;
+  text-align: center;
 }
 header img {
   width: 200px;
@@ -63,6 +64,55 @@ header nav a:hover {
 }
 .boton:hover {
   background-color: #023e8a;
+}
+
+footer {
+  background-color: #0eb0ab;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+footer ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+div {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+div h3 {
+  font-size: 30px;
+  color: #0eb0ab;
+  margin-bottom: 20px;
+  text-align: center;
+}
+div p {
+  line-height: 2;
+  margin: 0 20px;
+  text-align: justify;
+}
+
+.claro {
+  background-color: aliceblue;
+}
+
+.oscuro {
+  background-color: #f1f5f9;
 }
 
 /*# sourceMappingURL=inicio.css.map */

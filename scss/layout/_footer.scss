@@ -1,0 +1,17 @@
+@use '../utilidades/variables' as v;
+
+footer{
+    background-color: v.$color-primario-azul;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+
+    ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+    }
+}
