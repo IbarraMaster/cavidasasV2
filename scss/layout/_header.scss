@@ -1,7 +1,7 @@
 @use '../utilidades/variables' as v;
 
 header {
-  background-color: v.$gris-fondo;
+  background-color: v.$fondo;
   color: v.$color-primario-azul;
   display: flex;
   flex-direction: column;

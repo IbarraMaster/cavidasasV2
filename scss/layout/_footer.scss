@@ -1,17 +1,25 @@
 @use '../utilidades/variables' as v;
 
 footer{
-    background-color: v.$color-primario-azul;
+    background-color: v.$fondo;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    padding: 10px 0px 0px 0px ;
     text-align: center;
 
-    ul{
+    div{
         display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 10px;
+        flex-direction: row;
+        margin-top: 0px;
+        a{
+            margin: 0 20px;
+        }
+
+        img{
+            width: 40px;
+            height: auto;
+        }
     }
+
 }

@@ -25,7 +25,7 @@ img {
 }
 
 header {
-  background-color: #e0e0e0;
+  background-color: #f1f5f9;
   color: #0eb0ab;
   display: flex;
   flex-direction: column;
@@ -67,33 +67,48 @@ header nav a:hover {
 }
 
 footer {
-  background-color: #0eb0ab;
+  background-color: #f1f5f9;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+  padding: 10px 0px 0px 0px;
   text-align: center;
 }
-footer ul {
+footer div {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 10px;
+  flex-direction: row;
+  margin-top: 0px;
+}
+footer div a {
+  margin: 0 20px;
+}
+footer div img {
+  width: 40px;
+  height: auto;
 }
 
 section {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  margin-top: 20px;
+  align-items: center;
+  margin-bottom: 30px;
 }
 
 div {
-  width: 80%;
+  width: 60%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 30px;
+  margin-top: 40px;
+  background-color: #f1f5f9;
+}
+@media (max-width: 576px) {
+  div {
+    width: 90%;
+  }
 }
 div h3 {
   font-size: 30px;
@@ -105,14 +120,6 @@ div p {
   line-height: 2;
   margin: 0 20px;
   text-align: justify;
-}
-
-.claro {
-  background-color: aliceblue;
-}
-
-.oscuro {
-  background-color: #f1f5f9;
 }
 
 /*# sourceMappingURL=inicio.css.map */
