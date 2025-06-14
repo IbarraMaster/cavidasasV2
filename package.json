@@ -1,0 +1,15 @@
+{
+  "name": "cavidasasv2",
+  "version": "1.0.0",
+  "description": "Esta es la version dos de la pagina web de la empresa CAVIDA S.A.S.\r La primera version se ecuentra en: https://github.com/IbarraMaster/cavidaSAS.git",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.89.2"
+  }
+}

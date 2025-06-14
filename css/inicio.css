@@ -1,0 +1,57 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 16px;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+header {
+  background-color: #e0e0e0;
+  color: #0eb0ab;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav a {
+  margin-left: 1rem;
+  font-weight: bold;
+  transition: 0.3s;
+}
+header nav a:hover {
+  color: #e20914;
+}
+
+.boton {
+  background-color: #0eb0ab;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.boton:hover {
+  background-color: #023e8a;
+}
+
+/*# sourceMappingURL=inicio.css.map */
