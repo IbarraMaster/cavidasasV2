@@ -32,7 +32,6 @@ div {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 30px;
     margin-top: 40px;
     background-color: v.$fondo;
     border-radius: 30px;
@@ -82,12 +81,6 @@ div {
         background-color: #f9f9f9;
     }
 
-    h3 {
-        text-align: center;
-        color: v.$color-primario-azul;
-        font-size: 30px;
-    }
-
     form {
         width: 100%;
         display: flex;
@@ -132,4 +125,8 @@ div {
     p {
         text-align: center;
     }
+}
+
+.p-30{
+    padding: 30px;
 }

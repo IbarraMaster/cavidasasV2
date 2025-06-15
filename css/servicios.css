@@ -115,127 +115,102 @@ footer div img {
   padding: 0;
 }
 
-section {
+.servicios {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 30px;
-}
-
-h3 {
-  position: relative;
-  display: inline-block;
-  padding-bottom: 5px;
-}
-
-h3::after {
-  content: "";
-  position: absolute;
-  left: 25%;
-  bottom: 0;
-  width: 50%;
-  height: 2px;
-  background-color: #e20914;
-}
-
-div {
-  width: 60%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 40px;
-  background-color: #f1f5f9;
-  border-radius: 30px;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-}
-@media (max-width: 576px) {
-  div {
-    width: 90%;
-  }
-}
-div h3 {
-  font-size: 30px;
-  color: #0eb0ab;
-  margin-bottom: 20px;
-  text-align: center;
-}
-div p {
-  line-height: 2;
-  margin: 0 20px;
-  text-align: justify;
-}
-div img {
-  border-radius: 70px;
-}
-@media (max-width: 576px) {
-  div img {
-    padding: 0px;
-    border-radius: 30px;
-    margin-top: 10px;
-  }
-}
-
-.equipo {
   margin-top: 20px;
 }
 
-.formularioSection {
+.servicio {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 90%;
+}
+
+.divGrid {
   display: grid;
   grid-template-columns: 50% 50%;
-  width: 90%;
-  background-color: #f9f9f9;
+  place-content: center;
+}
+.divGrid p {
+  text-align: center;
+  background-color: #0eb0ab;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.serviciosGrid {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-content: center;
+  align-items: center;
 }
 @media (max-width: 576px) {
-  .formularioSection {
+  .serviciosGrid {
     display: flex;
     flex-direction: column;
-    background-color: #f9f9f9;
   }
 }
-.formularioSection form {
-  width: 100%;
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.divEmpresarial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.divEmpresarial div {
+  background-color: #0eb0ab;
+  margin: 10px;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #f1f5f9;
-  border-radius: 30px;
-  padding: 10px;
-}
-.formularioSection form label {
-  font-family: "Segoe UI", sans-serif;
-}
-.formularioSection form input {
-  border-color: #0eb0ab;
-  border-radius: 5px;
+  padding: 5px;
   width: 80%;
-  margin-top: 10px;
-  height: 30px;
-  border-width: thin;
 }
-.formularioSection div {
-  box-shadow: none;
-  background-color: white;
-  width: 100%;
-  padding: 0;
-  margin: 10px;
-  background-color: #f1f5f9;
-}
-
-.contactanos {
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-  display: flex;
-  justify-content: space-around;
-  height: 100%;
-}
-.contactanos p {
+.divEmpresarial div p {
+  color: white;
   text-align: center;
 }
-
-.p-30 {
-  padding: 30px;
+.divEmpresarial span {
+  font-weight: 800;
 }
 
-/*# sourceMappingURL=inicio.css.map */
+.imgAsistencial {
+  width: 80%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.imgEmpresarial {
+  width: 60%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.column p {
+  width: 60%;
+}
+
+/*# sourceMappingURL=servicios.css.map */
