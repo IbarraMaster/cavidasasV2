@@ -1,7 +1,7 @@
 @use '../main.scss';
 @use '../utilidades/variables' as v;
 
-section{
+section {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -9,7 +9,24 @@ section{
     margin-bottom: 30px;
 }
 
-div{
+
+h3{
+  position: relative;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+h3::after {
+  content: "";
+  position: absolute;
+  left: 25%;
+  bottom: 0;
+  width: 50%;
+  height: 2px; 
+  background-color: v.$color-rojo; 
+}
+
+div {
     width: 60%;
     display: flex;
     flex-direction: column;
@@ -18,21 +35,101 @@ div{
     padding: 30px;
     margin-top: 40px;
     background-color: v.$fondo;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 
     @media (max-width:v.$celularGrande) {
         width: 90%;
     }
 
-    h3{
+    h3 {
         font-size: 30px;
         color: v.$color-primario-azul;
         margin-bottom: 20px;
         text-align: center;
     }
-    p{
+
+    p {
         line-height: 2;
         margin: 0 20px;
         text-align: justify;
     }
+
+    img {
+        border-radius: 70px;
+
+        @media (max-width : v.$celularGrande) {
+            padding: 0px;
+            border-radius: 30px;
+            margin-top: 10px;
+        }
+    }
 }
 
+.equipo {
+    margin-top: 20px;
+}
+
+.formularioSection {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 90%;
+    background-color: #f9f9f9;
+
+    @media (max-width : v.$celularGrande) {
+        display: flex;
+        flex-direction: column;
+        background-color: #f9f9f9;
+    }
+
+    h3 {
+        text-align: center;
+        color: v.$color-primario-azul;
+        font-size: 30px;
+    }
+
+    form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: v.$fondo;
+        border-radius: 30px;
+        padding: 10px;
+
+        label {
+            font-family: "Segoe UI", sans-serif;
+        }
+
+        input {
+            border-color: v.$color-primario-azul;
+            border-radius: 5px;
+            width: 80%;
+            margin-top: 10px;
+            height: 30px;
+            border-width: thin;
+        }
+    }
+
+    div {
+        box-shadow: none;
+        background-color: white;
+        width: 100%;
+        padding: 0;
+        margin: 10px;
+        background-color: v.$fondo;
+    }
+}
+
+
+.contactanos {
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+
+    p {
+        text-align: center;
+    }
+}

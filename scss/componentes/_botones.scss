@@ -1,7 +1,7 @@
-@use '../utilidades/variables';
+@use '../utilidades/variables' as v;
 
 .boton {
-  background-color: variables.$color-primario-azul;
+  background-color: v.$color-primario-azul;
   color: white;
   padding: 0.75rem 1.5rem;
   border: none;
@@ -9,6 +9,7 @@
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s;
+
 
   &:hover {
     background-color:#023e8a;
