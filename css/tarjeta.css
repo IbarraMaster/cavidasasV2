@@ -116,127 +116,60 @@ footer div img {
   padding: 0;
 }
 
-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 30px;
-}
-
-h3 {
-  position: relative;
-  display: inline-block;
-  padding-bottom: 5px;
-}
-
-h3::after {
-  content: "";
-  position: absolute;
-  left: 25%;
-  bottom: 0;
-  width: 50%;
-  height: 2px;
-  background-color: #e20914;
-}
-
-div {
-  width: 60%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 40px;
-  background-color: #f1f5f9;
-  border-radius: 30px;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-}
-@media (max-width: 576px) {
-  div {
-    width: 90%;
-  }
-}
-div h3 {
-  font-size: 30px;
-  color: #0eb0ab;
-  margin-bottom: 20px;
-  text-align: center;
-}
-div p {
-  line-height: 2;
-  margin: 0 20px;
-  text-align: justify;
-}
-div img {
-  border-radius: 70px;
-}
-@media (max-width: 576px) {
-  div img {
-    padding: 0px;
-    border-radius: 30px;
-    margin-top: 10px;
-  }
-}
-
-.equipo {
-  margin-top: 20px;
-}
-
-.formularioSection {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  width: 90%;
-  background-color: #f9f9f9;
-}
-@media (max-width: 576px) {
-  .formularioSection {
-    display: flex;
-    flex-direction: column;
-    background-color: #f9f9f9;
-  }
-}
-.formularioSection form {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #f1f5f9;
-  border-radius: 30px;
-  padding: 10px;
-}
-.formularioSection form label {
-  font-family: "Segoe UI", sans-serif;
-}
-.formularioSection form input {
-  border-color: #0eb0ab;
-  border-radius: 5px;
+.tarjetaSection {
+  margin: 0 auto;
   width: 80%;
-  margin-top: 10px;
-  height: 30px;
-  border-width: thin;
-}
-.formularioSection div {
-  box-shadow: none;
-  background-color: white;
-  width: 100%;
-  padding: 0;
-  margin: 10px;
-  background-color: #f1f5f9;
-}
-
-.contactanos {
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   display: flex;
-  justify-content: space-around;
-  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20px;
 }
-.contactanos p {
+.tarjetaSection h3 {
+  margin: 20px;
+  font-size: 40px;
   text-align: center;
 }
 
-.p-30 {
-  padding: 30px;
+.tarjetaGrid {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 576px) {
+  .tarjetaGrid {
+    grid-template-columns: 50% 50%;
+    column-gap: 0px;
+    row-gap: 10px;
+  }
+}
+.tarjetaGrid div {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  border-radius: 20px;
+  background-color: #f1f5f9;
+}
+.tarjetaGrid div img {
+  width: 30%;
+  margin: 0 auto;
+  object-fit: cover;
+}
+.tarjetaGrid div p {
+  color: #0eb0ab;
+  font-weight: 800;
+  margin-top: 10px;
+  padding-bottom: 20px;
+}
+.tarjetaGrid div a {
+  padding-top: 20px;
 }
 
-/*# sourceMappingURL=inicio.css.map */
+/*# sourceMappingURL=tarjeta.css.map */

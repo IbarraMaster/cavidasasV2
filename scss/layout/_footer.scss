@@ -1,7 +1,7 @@
 @use '../utilidades/variables' as v;
 
 footer {
-    background-color: v.$fondo;
+    background-color: #e5e5e0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,6 +19,7 @@ footer {
         margin-top: 0px;
         box-shadow: none;
         padding: 30px;
+        background-color: #e5e5e0;
 
 
         a {
