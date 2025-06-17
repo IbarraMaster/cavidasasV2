@@ -1,0 +1,30 @@
+@use '../main.scss';
+@use '../utilidades/variables' as v;
+
+.aliadoSection{
+    margin: 0 auto;
+    display: grid;
+    width: 80%;
+    grid-template-columns: 33% 33% 33%;
+    gap: 20px;
+    padding: 30px 0px;
+
+    @media (max-width:v.$celularGrande) {
+        grid-template-columns: 50% 50%;
+    }
+
+    div{
+        margin: 0 auto;
+        padding: 10px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+        border-radius: 10px;
+    }
+
+    img{
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 20%;
+    }
+
+}
