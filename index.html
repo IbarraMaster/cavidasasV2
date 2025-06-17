@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Equipo Cavida">
-    <meta name="description" content="Es la pagina web de la empresa nariñense cavida">
-    
+    <meta name="description"
+      content="Es la pagina web de la empresa nariñense cavida">
 
     <title>CAVIDA</title>
     <link rel="stylesheet" href="css/inicio.css">
@@ -15,15 +15,22 @@
     <link rel="icon" href="/favicon/favicon.ico" type="image/x-icon">
 
     <!-- PNGs para diferentes resoluciones -->
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="48x48" href="/favicon/favicon-48x48.png">
-    <link rel="icon" type="image/png" sizes="64x64" href="/favicon/favicon-64x64.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16"
+      href="/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32"
+      href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48"
+      href="/favicon/favicon-48x48.png">
+    <link rel="icon" type="image/png" sizes="64x64"
+      href="/favicon/favicon-64x64.png">
+    <link rel="icon" type="image/png" sizes="96x96"
+      href="/favicon/favicon-96x96.png">
 
     <!-- Alta resolución para Android -->
-    <link rel="icon" type="image/png" sizes="192x192" href="/favicon/android-chrome-192x192.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="/favicon/android-chrome-512x512.png">
+    <link rel="icon" type="image/png" sizes="192x192"
+      href="/favicon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512"
+      href="/favicon/android-chrome-512x512.png">
 
     <!-- iOS Apple Touch -->
     <link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png">
@@ -94,25 +101,28 @@
 
     <section class="formularioSection" id="contacto">
 
-      <form netlify>
+      <form name="contacto" method="POST" netlify>
         <h3>Te Contactamos</h3>
 
+        <!-- Campo oculto para que Netlify lo reconozca -->
+        <input type="hidden" name="form-name" value="contacto">
+
         <div class="formDiv">
-          <label for>Nombre:</label>
-          <input type="text" name id>
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required>
         </div>
 
         <div class="formDiv">
-          <label for>Email</label>
-          <input type="email">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
         </div>
 
         <div class="formDiv">
-          <label for>Celular</label>
-          <input type="number">
+          <label for="numero">Celular:</label>
+          <input type="number" id="numero" name="numero" required>
         </div>
 
-        <button class="boton">ENVIAR</button>
+        <button class="boton" type="submit">ENVIAR</button>
       </form>
 
       <div class="contactanos">
@@ -129,14 +139,16 @@
       </div>
     </section>
 
-
     <footer>
       <p>© 2025 CAVIDA S.A.S. Todos los derechos reservados.</p>
       <div>
-        <a href="https://www.instagram.com/cavida_sas/"><img src="imgs/redes/instagram.webp"
+        <a href="https://www.instagram.com/cavida_sas/"><img
+            src="imgs/redes/instagram.webp"
             alt="Icono de Instagram"></a>
-        <a href="https://www.facebook.com/profile.php?id=100092236007813"><img src="imgs/redes/facebook.webp" alt="Icono de Facebook"></a>
-        <a href="mailto:centrocavidasas@gmail.com"><img src="imgs/redes/gmail.webp" alt="Icono de Mail"></a>
+        <a href="https://www.facebook.com/profile.php?id=100092236007813"><img
+            src="imgs/redes/facebook.webp" alt="Icono de Facebook"></a>
+        <a href="mailto:centrocavidasas@gmail.com"><img
+            src="imgs/redes/gmail.webp" alt="Icono de Mail"></a>
       </div>
     </footer>
   </body>
