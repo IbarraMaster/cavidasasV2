@@ -34,6 +34,13 @@ h3 {
   font-size: 30px;
 }
 
+h1 {
+  text-align: center;
+  color: #0eb0ab;
+  font-size: 30px;
+  margin: 10px;
+}
+
 header {
   background-color: #e5e5e0;
   color: #0eb0ab;
