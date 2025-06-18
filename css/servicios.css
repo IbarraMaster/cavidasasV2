@@ -135,6 +135,10 @@ footer div img {
   margin-top: 10px;
   margin-bottom: 20px;
   width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .divGrid {
@@ -165,6 +169,18 @@ footer div img {
   .serviciosGrid {
     display: flex;
     flex-direction: column;
+  }
+  .serviciosGrid #imgBienestar {
+    order: 1;
+  }
+  .serviciosGrid #divEmpresarial {
+    order: 2;
+  }
+  .serviciosGrid #divGrid {
+    order: 2;
+  }
+  .serviciosGrid #divImg {
+    order: 1;
   }
 }
 
@@ -219,6 +235,22 @@ footer div img {
 }
 .column p {
   width: 60%;
+}
+
+.membresia a {
+  padding: 10px;
+}
+.membresia a img {
+  max-width: 90%;
+  margin: 0 auto;
+  border-radius: 16px;
+  display: block;
+  transition: transform 0.4s ease, box-shadow 0.4s ease, filter 0.4s ease;
+}
+.membresia a img:hover {
+  transform: scale(1.05) rotate(-0.5deg);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  filter: brightness(1.1) contrast(1.05);
 }
 
 /*# sourceMappingURL=servicios.css.map */
