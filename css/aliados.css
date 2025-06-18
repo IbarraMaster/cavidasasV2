@@ -38,7 +38,7 @@ h1 {
   text-align: center;
   color: #0eb0ab;
   font-size: 30px;
-  margin: 10px;
+  margin: 30px 0px 15px 0px;
 }
 
 header {
@@ -144,6 +144,11 @@ footer div img {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.aliadoSection div:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 12px 25px rgba(0, 156, 168, 0.3);
+  background-color: #f1f5f9;
 }
 .aliadoSection img {
   max-width: 100%;

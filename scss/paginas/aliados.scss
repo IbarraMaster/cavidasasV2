@@ -1,7 +1,7 @@
 @use '../main.scss';
 @use '../utilidades/variables' as v;
 
-.aliadoSection{
+.aliadoSection {
     margin: 0 auto;
     display: grid;
     width: 80%;
@@ -13,7 +13,7 @@
         grid-template-columns: 50% 50%;
     }
 
-    div{
+    div {
         margin: 0 auto;
         padding: 10px;
         box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
@@ -21,13 +21,20 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
+        &:hover {
+            transform: translateY(-8px) scale(1.03);
+            box-shadow: 0 12px 25px rgba(0, 156, 168, 0.3);
+            background-color: v.$fondo;
+        }
     }
 
-    img{
+    img {
         max-width: 100%;
         height: auto;
         object-fit: cover;
         border-radius: 20%;
-    }
 
+    }
 }
+
