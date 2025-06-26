@@ -492,6 +492,10 @@ body {
   display: flex;
   justify-content: center;
 }
+.grupoCavidaDiv div .img2grupo {
+  width: 40%;
+  margin-bottom: 20px;
+}
 .grupoCavidaDiv div img {
   height: auto;
   width: 70%;
