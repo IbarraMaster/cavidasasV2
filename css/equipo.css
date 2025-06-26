@@ -7,9 +7,9 @@
 }
 
 body {
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Nunito", sans-serif;
   font-size: 16px;
-  color: #333;
+  color: #008b8b;
   background-color: #f9f9f9;
   display: flex;
   flex-direction: column;
@@ -19,7 +19,7 @@ body {
 
 a {
   text-decoration: none;
-  color: inherit;
+  color: #008b8b;
 }
 
 img {
@@ -30,15 +30,19 @@ img {
 
 h3 {
   text-align: center;
-  color: #0eb0ab;
+  color: #008b8b;
   font-size: 30px;
 }
 
 h1 {
   text-align: center;
-  color: #0eb0ab;
+  color: #008b8b;
   font-size: 30px;
   margin: 30px 0px 15px 0px;
+}
+
+p {
+  color: #008b8b;
 }
 
 header {
@@ -141,11 +145,23 @@ footer div img {
   padding: 0;
 }
 
+.blanco {
+  background-color: #FFFFf1;
+}
+.blanco div {
+  background-color: #FFFFf1;
+}
+
+body {
+  background-color: #FFFFf1;
+}
+
 .equipoSection {
   padding: 30px;
   box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
   margin: 30px 0px;
   border-radius: 30px;
+  background-color: #ebf5ee;
 }
 
 .divSection {
@@ -155,6 +171,9 @@ footer div img {
   width: 850px;
   justify-content: center;
   align-items: center;
+}
+.divSection div {
+  background-color: #FFFFf1;
 }
 @media (max-width: 768px) {
   .divSection {

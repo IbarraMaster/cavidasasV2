@@ -366,6 +366,9 @@ body {
         .img2grupo{
             width: 40%;
             margin-bottom: 20px;
+            @media (max-width : v.$tablet) {
+                width: 50%;
+            }
         }
     }
 
