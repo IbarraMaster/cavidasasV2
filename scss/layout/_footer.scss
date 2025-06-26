@@ -1,7 +1,7 @@
 @use '../utilidades/variables' as v;
 
 footer {
-    background-color: #e5e5e0;
+    background-color: #ebf5ee;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11,6 +11,8 @@ footer {
 
     p {
         margin: 0px 10px;
+        color: #008b8b;
+        margin-top: 5px;
     }
 
     div {
@@ -18,8 +20,8 @@ footer {
         flex-direction: row;
         margin-top: 0px;
         box-shadow: none;
-        padding: 30px;
-        background-color: #e5e5e0;
+        padding: 20px 30px 30px 30px;
+        background-color: #ebf5ee;
 
 
         a {
@@ -33,4 +35,11 @@ footer {
         }
     }
 
+}
+
+.blanco{
+    background-color: #FFFFf1;
+    div{
+        background-color: #FFFFf1;
+    }
 }

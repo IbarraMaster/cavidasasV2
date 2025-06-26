@@ -42,7 +42,7 @@ h1 {
 }
 
 header {
-  background-color: #e5e5e0;
+  background-color: #ebf5ee;
   color: #0eb0ab;
   display: flex;
   flex-direction: column;
@@ -53,13 +53,29 @@ header {
   width: 100%;
 }
 header img {
-  width: 200px;
+  width: 300px;
+  margin-bottom: 20px;
+  margin: 10px;
+}
+header nav {
   margin-bottom: 20px;
 }
 header nav a {
   margin: 15px;
-  font-weight: bold;
+  color: #008b8b;
+  font-size: 20px;
   transition: 0.3s;
+}
+header nav a:hover {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  animation-name: example;
+  animation-duration: 0.25s;
+  border-left: 8px solid red;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  padding: 10px;
 }
 @media (max-width: 576px) {
   header nav a {
@@ -95,7 +111,7 @@ header nav a:hover {
 }
 
 footer {
-  background-color: #e5e5e0;
+  background-color: #ebf5ee;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -105,14 +121,16 @@ footer {
 }
 footer p {
   margin: 0px 10px;
+  color: #008b8b;
+  margin-top: 5px;
 }
 footer div {
   display: flex;
   flex-direction: row;
   margin-top: 0px;
   box-shadow: none;
-  padding: 30px;
-  background-color: #e5e5e0;
+  padding: 20px 30px 30px 30px;
+  background-color: #ebf5ee;
 }
 footer div a {
   margin: 0 20px;

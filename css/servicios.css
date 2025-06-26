@@ -7,9 +7,9 @@
 }
 
 body {
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Nunito", sans-serif;
   font-size: 16px;
-  color: #333;
+  color: #008b8b;
   background-color: #f9f9f9;
   display: flex;
   flex-direction: column;
@@ -19,7 +19,7 @@ body {
 
 a {
   text-decoration: none;
-  color: inherit;
+  color: #008b8b;
 }
 
 img {
@@ -30,19 +30,23 @@ img {
 
 h3 {
   text-align: center;
-  color: #0eb0ab;
+  color: #008b8b;
   font-size: 30px;
 }
 
 h1 {
   text-align: center;
-  color: #0eb0ab;
+  color: #008b8b;
   font-size: 30px;
   margin: 30px 0px 15px 0px;
 }
 
+p {
+  color: #008b8b;
+}
+
 header {
-  background-color: #e5e5e0;
+  background-color: #ebf5ee;
   color: #0eb0ab;
   display: flex;
   flex-direction: column;
@@ -53,13 +57,29 @@ header {
   width: 100%;
 }
 header img {
-  width: 200px;
+  width: 300px;
+  margin-bottom: 20px;
+  margin: 10px;
+}
+header nav {
   margin-bottom: 20px;
 }
 header nav a {
   margin: 15px;
-  font-weight: bold;
+  color: #008b8b;
+  font-size: 20px;
   transition: 0.3s;
+}
+header nav a:hover {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  animation-name: example;
+  animation-duration: 0.25s;
+  border-left: 8px solid red;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  padding: 10px;
 }
 @media (max-width: 576px) {
   header nav a {
@@ -95,7 +115,7 @@ header nav a:hover {
 }
 
 footer {
-  background-color: #e5e5e0;
+  background-color: #ebf5ee;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -105,14 +125,16 @@ footer {
 }
 footer p {
   margin: 0px 10px;
+  color: #008b8b;
+  margin-top: 5px;
 }
 footer div {
   display: flex;
   flex-direction: row;
   margin-top: 0px;
   box-shadow: none;
-  padding: 30px;
-  background-color: #e5e5e0;
+  padding: 20px 30px 30px 30px;
+  background-color: #ebf5ee;
 }
 footer div a {
   margin: 0 20px;
@@ -121,6 +143,20 @@ footer div img {
   width: 40px;
   height: auto;
   padding: 0;
+}
+
+.blanco {
+  background-color: #FFFFf1;
+}
+.blanco div {
+  background-color: #FFFFf1;
+}
+
+h3 {
+  color: #e20914;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-weight: 400;
 }
 
 .servicios {
@@ -148,14 +184,15 @@ footer div img {
 }
 .divGrid p {
   text-align: center;
-  background-color: #0eb0ab;
+  background-color: #FFFFf1;
   border-radius: 10px;
   margin: 10px;
   padding: 10px;
-  color: white;
+  color: #008b8b;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-weight: 400;
 }
 
 .serviciosGrid {
@@ -197,7 +234,7 @@ footer div img {
   justify-content: center;
 }
 .divEmpresarial div {
-  background-color: #0eb0ab;
+  background-color: #ebf5ee;
   margin: 10px;
   border-radius: 10px;
   display: flex;
@@ -208,8 +245,8 @@ footer div img {
   width: 80%;
 }
 .divEmpresarial div p {
-  color: white;
   text-align: center;
+  color: #008b8b;
 }
 .divEmpresarial span {
   font-weight: 800;
@@ -237,6 +274,10 @@ footer div img {
   width: 60%;
 }
 
+.membresia {
+  background-color: #FFFFf1;
+  width: 100%;
+}
 .membresia a {
   padding: 10px;
 }
@@ -251,6 +292,65 @@ footer div img {
   transform: scale(1.05) rotate(-0.5deg);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
   filter: brightness(1.1) contrast(1.05);
+}
+
+.asistencialesDiv {
+  background-color: #ebf5ee;
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 0;
+  padding-bottom: 20px;
+}
+
+.bienestarDiv {
+  background-color: #FFFFf1;
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.contablesDiv {
+  background-color: #ebf5ee;
+  margin: 0;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.temporalesDiv {
+  background-color: #FFFFf1;
+  width: 100%;
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+.tempsPs p {
+  background-color: #ebf5ee;
+}
+
+.divTarjeta {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  justify-items: center;
+  font-size: 25px;
+}
+@media (max-width: 576px) {
+  .divTarjeta {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+  }
+  .divTarjeta p {
+    order: 2;
+    margin-bottom: 10px;
+  }
+  .divTarjeta a {
+    order: 1;
+  }
+}
+.divTarjeta p {
+  text-align: center;
+  width: 60%;
 }
 
 /*# sourceMappingURL=servicios.css.map */

@@ -7,9 +7,9 @@
 }
 
 body {
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Nunito", sans-serif;
   font-size: 16px;
-  color: #333;
+  color: #008b8b;
   background-color: #f9f9f9;
   display: flex;
   flex-direction: column;
@@ -19,7 +19,7 @@ body {
 
 a {
   text-decoration: none;
-  color: inherit;
+  color: #008b8b;
 }
 
 img {
@@ -30,19 +30,23 @@ img {
 
 h3 {
   text-align: center;
-  color: #0eb0ab;
+  color: #008b8b;
   font-size: 30px;
 }
 
 h1 {
   text-align: center;
-  color: #0eb0ab;
+  color: #008b8b;
   font-size: 30px;
   margin: 30px 0px 15px 0px;
 }
 
+p {
+  color: #008b8b;
+}
+
 header {
-  background-color: #e5e5e0;
+  background-color: #ebf5ee;
   color: #0eb0ab;
   display: flex;
   flex-direction: column;
@@ -53,13 +57,29 @@ header {
   width: 100%;
 }
 header img {
-  width: 200px;
+  width: 300px;
+  margin-bottom: 20px;
+  margin: 10px;
+}
+header nav {
   margin-bottom: 20px;
 }
 header nav a {
   margin: 15px;
-  font-weight: bold;
+  color: #008b8b;
+  font-size: 20px;
   transition: 0.3s;
+}
+header nav a:hover {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  animation-name: example;
+  animation-duration: 0.25s;
+  border-left: 8px solid red;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  padding: 10px;
 }
 @media (max-width: 576px) {
   header nav a {
@@ -95,7 +115,7 @@ header nav a:hover {
 }
 
 footer {
-  background-color: #e5e5e0;
+  background-color: #ebf5ee;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -105,14 +125,16 @@ footer {
 }
 footer p {
   margin: 0px 10px;
+  color: #008b8b;
+  margin-top: 5px;
 }
 footer div {
   display: flex;
   flex-direction: row;
   margin-top: 0px;
   box-shadow: none;
-  padding: 30px;
-  background-color: #e5e5e0;
+  padding: 20px 30px 30px 30px;
+  background-color: #ebf5ee;
 }
 footer div a {
   margin: 0 20px;
@@ -123,6 +145,17 @@ footer div img {
   padding: 0;
 }
 
+.blanco {
+  background-color: #FFFFf1;
+}
+.blanco div {
+  background-color: #FFFFf1;
+}
+
+body {
+  background-color: #FFFFf1;
+}
+
 .tarjetaSection {
   margin: 0 auto;
   width: 80%;
@@ -130,6 +163,7 @@ footer div img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: #FFFFf1;
   padding-bottom: 20px;
 }
 .tarjetaSection h3 {
@@ -162,7 +196,7 @@ footer div img {
   align-items: center;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   border-radius: 20px;
-  background-color: #f1f5f9;
+  background-color: #ebf5ee;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .tarjetaGrid div:hover {
@@ -182,7 +216,7 @@ footer div img {
 }
 .tarjetaGrid div p {
   color: #0eb0ab;
-  font-weight: 800;
+  font-weight: 500;
   margin-top: 10px;
   padding-bottom: 20px;
   transition: color 0.3s ease;

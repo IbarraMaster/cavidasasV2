@@ -9,6 +9,10 @@
       content="Es la pagina web de la empresa nariñense cavida">
 
     <title>CAVIDA</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+      rel="stylesheet">
+
     <link rel="stylesheet" href="/css/inicio.css">
 
     <!-- Favicon básico -->
@@ -56,91 +60,86 @@
       </nav>
     </header>
 
-    <section>
-      <div class="p-30">
-        <h3>¿Quienes Somos?</h3>
-        <p>Somos una empresa visionaria dedicada a ofrecer soluciones
-          innovadoras que aceleran el desarrollo y éxito de las organizaciones.
-          Conectamos talento con oportunidades, impulsando el crecimiento
-          sostenible y el bienestar de las personas.</p>
-      </div>
+    <section class="sectionQuienes">
+      <div class="divQuienesSomos">
+        <div class="imgSomos">
+          <img src="imgs/talentoHumano/equipo.png"
+            alt="Imagen del equipo humano de cavida">
+        </div>
 
-      <div class="p-30">
-        <h3>Misión</h3>
-        <p>Brindar soluciones ágiles y confiables en servicios temporales,
-          asistenciales, contables y de bienestar social para que empresas y
-          profesionales alcancen su máximo potencial.</p>
+        <div class="p-30 divSomos">
+          <h3>¿Quiénes somos?</h3>
+          <p>Somos una empresa visionaria dedicada a ofrecer soluciones
+            innovadoras que aceleran el desarrollo y éxito de las
+            organizaciones.
+            Conectamos talento con oportunidades, impulsando el crecimiento
+            sostenible y el bienestar de las personas.</p>
+        </div>
       </div>
+    </section>
 
-      <div class="p-30">
-        <h3>Visión</h3>
-        <p>Ser un referente destacado por ofrecer soluciones integrales que
-          impulsan el crecimiento y bienestar empresarial con eficiencia y
-          excelencia.</p>
-      </div>
+    <section class="misionVision">
+        <div class="mision">
+          <h3>Misión</h3>
+          <img class="imgMision" src="imgs/inicio/mision.png" alt="Icono de la mision">
+          <p>Brindar soluciones ágiles y confiables en servicios temporales,
+            asistenciales, contables y de bienestar social para que empresas y
+            profesionales alcancen su máximo potencial.</p>
+        </div>
 
-      <div class="p-30">
-        <h3>¿Qué nos hace diferentes?</h3>
-        <p>En CAVIDA S.A.S, potenciamos el éxito de empresas y profesionales a
-          través de soluciones temporales, asistenciales, contables y de
-          bienestar social. Nos diferenciamos por nuestra agilidad,
-          confiabilidad y un enfoque integral que asegura resultados adaptados a
-          tus necesidades, permitiéndote alcanzar tu máximo potencial con el
-          respaldo de un equipo comprometido con tu éxito.</p>
-      </div>
-
-      <div class="p-30">
-        <h3>Nuestro Equipo Humano</h3>
-        <p>Personas reales, con compromiso real. En CAVIDA S.A.S trabajamos con
-          pasión por tu bienestar y crecimiento.</p>
-        <img class="equipo" src=""
-          alt="Foto del equipo humano de cavida">
+        <div class="vision">
+          <h3>Visión</h3>
+          <img class="imgVision" src="imgs/inicio/vision.png" alt="Icono de vision">
+          <p>Ser un referente destacado por ofrecer soluciones integrales que
+            permitan impulsar el crecimiento y el bienestar empresarial con eficiencia y
+            excelencia.</p>
+        </div>
       </div>
 
     </section>
 
-    <section class="formularioSection" id="contacto">
+    <section class="sectionDiferentes">
+      <div class="divtexto">
+        <h3>¿Qué nos hace diferentes?</h3>
+        <p>En CAVIDA S.A.S, potenciamos el éxito de empresas y profesionales a través de soluciones temporales, asistenciales, contables y de bienestar social. Nos diferenciamos por nuestra agilidad, confiabilidad y un enfoque integral que asegura resultados adaptados a tus necesidades, permitiéndote alcanzar tu máximo potencial con el respaldo de un equipo comprometido con tu éxito.</p>
+      </div>
 
-      <form name="contacto" method="POST" netlify action="pages/gracias.html">
-        <h3>Te Contactamos</h3>
+      <div class="divImg">
+        <img src="imgs/inicio/sectionDiferentes.jpeg" alt="Imagen del equipo cavida">
+      </div>
+      
+    </section>
 
-        <!-- Campo oculto para que Netlify lo reconozca -->
-        <input type="hidden" name="form-name" value="contacto">
-
-        <div class="formDiv">
+    <section class="formularioContacto"> 
+      <div class="teContactamos">
+        <form action="post" class="forulario" netlify >
+          <h3>Te contactamos</h3>
+          
           <label for="nombre">Nombre:</label>
-          <input type="text" id="nombre" name="nombre" required>
-        </div>
+          <input type="text" id="nombre">
 
-        <div class="formDiv">
           <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
-        </div>
+          <input type="text" id="email">
 
-        <div class="formDiv">
-          <label for="numero">Celular:</label>
-          <input type="number" id="numero" name="numero" required>
-        </div>
+          <label for="celular">Celular:</label>
+          <input type="text" id="celular">
 
-        <button class="boton" type="submit">ENVIAR</button>
-      </form>
+          <button>Enviar</button>
+
+        </form>
+      </div>
 
       <div class="contactanos">
         <h3>Contáctanos</h3>
-
-        <p>📍 Dirección:</p>
-        <p>Cra. 24 #17-75 - Edificio Concasa - Oficina 209</p>
-
-        <p>📞 Celular:</p>
-        <p>317 740 7679</p>
-
-        <a href="https://wa.me/573177407679" target="_blank" class="boton"> 💬
-          Escribir por WhatsApp </a>
+        <a href="https://wa.me/573177407679" target="_blank"><button>Escribenos a whatsapp</button></a>
       </div>
+
     </section>
 
-    <footer>
+    <footer class="blanco">
       <p>© 2025 CAVIDA S.A.S. Todos los derechos reservados.</p>
+      <p>Cra. 24 #17-75 - Edificio Concasa - Oficina 209</p>
+      <p>3177407679 - 3150636243</p>
       <div>
         <a href="https://www.instagram.com/cavida_sas/"><img
             src="imgs/redes/instagram.webp"
