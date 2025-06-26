@@ -108,20 +108,19 @@
 
     <section class="formularioContacto"> 
       <div class="teContactamos">
-        <form action="pages/gracias.html" class="forulario" netlify >
+        <form name="contacto" method="POST" action="/pages/gracias.html" netlify>
           <h3>Te contactamos</h3>
-          
+
           <label for="nombre">Nombre:</label>
-          <input type="text" id="nombre">
+          <input type="text" id="nombre" name="nombre" required>
 
           <label for="email">Email:</label>
-          <input type="text" id="email">
+          <input type="email" id="email" name="email" required>
 
           <label for="celular">Celular:</label>
-          <input type="text" id="celular">
+          <input type="tel" id="celular" name="celular" required>
 
-          <button>Enviar</button>
-
+          <button type="submit">Enviar</button>
         </form>
       </div>
 
