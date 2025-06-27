@@ -117,7 +117,7 @@ body {
     background-color: #ebf5ee;
     padding: 10px;
     border-radius: 20px;
-    height: 250px;
+    height: auto;
 
     @media (max-width:v.$tablet) {
         height: auto;
