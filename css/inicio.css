@@ -180,9 +180,10 @@ body {
   }
 }
 .imgSomos img {
-  width: 80%;
+  width: 60%;
   margin: 0 auto;
   padding: 20px;
+  border-radius: 100px;
 }
 @media (max-width: 768px) {
   .imgSomos img {
