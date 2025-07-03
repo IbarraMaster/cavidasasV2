@@ -380,7 +380,7 @@ body {
 }
 
 .formularioContacto {
-  background-color: #FFFFf1;
+  background-color: #ebf5ee;
   display: grid;
   grid-template-columns: 50% 50%;
   width: 100%;
@@ -412,7 +412,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #ebf5ee;
+  background-color: #FFFFf1;
   width: 50%;
   border-radius: 20px;
   padding: 20px;
@@ -449,10 +449,10 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #ebf5ee;
   width: 50%;
   border-radius: 20px;
   height: 300px;
+  background-color: #FFFFf1;
 }
 @media (max-width: 768px) {
   .formularioContacto .contactanos {
@@ -507,47 +507,59 @@ body {
   width: 70%;
 }
 
-.card {
-  width: 200px;
-  height: 250px;
-  margin: 1rem auto;
-  perspective: 1000px;
-  cursor: pointer;
+.politicaSection {
+  padding: 30px;
+  background-color: #FFFFf1;
 }
-
-.card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
+.politicaSection .divPolPro {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  gap: 50px;
 }
-
-.card:hover .card-inner {
-  transform: rotateY(180deg);
+@media (max-width: 768px) {
+  .politicaSection .divPolPro {
+    width: 90%;
+  }
 }
-
-.card-front,
-.card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
+@media (max-width: 768px) {
+  .politicaSection .divPolPro {
+    flex-direction: column;
+  }
+}
+.politicaSection .divPolPro .div3PoPro {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  gap: 10px;
+  background-color: #ebf5ee;
+  border-radius: 40px;
+  padding: 20px;
+}
+.politicaSection .divPolPro .div3PoPro h3 {
+  margin-left: 100px;
+}
+@media (max-width: 768px) {
+  .politicaSection .divPolPro .div3PoPro h3 {
+    margin-left: 0;
+  }
+}
+.politicaSection .divPolPro .div3PoPro .div4PoPro {
   display: flex;
   align-items: center;
-  justify-content: center;
-  border-radius: 0.5rem;
+  gap: 20px;
 }
-
-.card-front {
-  background: white;
-  border: 1px solid #e5e7eb;
+@media (max-width: 768px) {
+  .politicaSection .divPolPro .div3PoPro .div4PoPro {
+    flex-direction: column;
+  }
 }
-
-.card-back {
-  background: #8b5cf6;
-  color: white;
-  transform: rotateY(180deg);
+.politicaSection .divPolPro .div3PoPro .div4PoPro img {
+  width: 20%;
+}
+.politicaSection .divPolPro .div3PoPro .div4PoPro p {
+  width: 80%;
+  text-align: center;
 }
 
 /*# sourceMappingURL=inicio.css.map */
